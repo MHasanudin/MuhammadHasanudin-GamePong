@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: White Cirlce
+    uniqueID: 796641379
+    locked: 0
+  - name: Black Circle
+    uniqueID: 3816113617
+    locked: 0
+  - name: Garis
+    uniqueID: 1399056471
+    locked: 0
+  - name: PowerUp
+    uniqueID: 377679067
+    locked: 0
+  - name: Ball
+    uniqueID: 1136892041
+    locked: 0
+  - name: UI
+    uniqueID: 2700569935
+    locked: 0

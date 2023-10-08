@@ -1,15 +1,31 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class PowerUpManager : MonoBehaviour
 {
-    public Transform spawnArea;
+    [Header("Amount & Interval waktu spawn")]
     public int maxPUAmount;
     public int spawnInterval;
 
+    [Header("Area Spawn Power Up")]
+    public Transform spawnArea;
     public Vector2 powerUpAreaMin;
     public Vector2 powerUpAreaMax;
+
+    [Header("Notification Power Up")]
+    public GameObject uiRightSpeed;
+    public TextMeshProUGUI txtRightSpeed;
+
+    public GameObject uiRightExtend;
+    public TextMeshProUGUI txtRightExtend;
+
+    public GameObject uiLeftSpeed;
+    public TextMeshProUGUI txtLeftSpeed;
+
+    public GameObject uiLeftExtend;
+    public TextMeshProUGUI txtLeftExtend;
 
     public List<GameObject> PUTemplateList;
 

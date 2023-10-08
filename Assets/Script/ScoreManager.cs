@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour
     public int maxScore;
 
     public BallController ball;
+    public GameController gameController;
     
     public void AddRightScore(int increment)
     {
@@ -17,7 +18,7 @@ public class ScoreManager : MonoBehaviour
 
         if(rightScore >= maxScore)
         {
-            GameOver();
+            gameController.GameOver();
         }
     }
 
@@ -28,12 +29,7 @@ public class ScoreManager : MonoBehaviour
 
         if (leftScore >= maxScore)
         {
-            GameOver();
+            gameController.GameOver();
         }
-    }
-
-    public void GameOver()
-    {
-        SceneManager.LoadScene("Main Menu");
     }
 }
